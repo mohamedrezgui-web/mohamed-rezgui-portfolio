@@ -1371,14 +1371,6 @@ button {
   font-weight: 700;
 }
 
-.cv-summary {
-  max-width: 590px;
-  margin: 13px 0 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.75;
-}
-
 .cv-intro-links {
   display: flex;
   flex-wrap: wrap;
@@ -1441,29 +1433,12 @@ button {
   text-transform: uppercase;
 }
 
-.cv-profile,
 .cv-experience,
 .cv-education,
 .cv-skills {
   padding-block: clamp(74px, 9vw, 126px);
 }
 
-.cv-profile {
-  background: var(--surface);
-}
-
-.cv-profile-grid {
-  display: grid;
-  grid-template-columns: minmax(150px, 0.38fr) minmax(0, 1fr);
-  gap: clamp(32px, 7vw, 95px);
-}
-
-.cv-profile-grid .eyebrow {
-  align-self: start;
-  margin-top: 8px;
-}
-
-.cv-profile-grid h2,
 .cv-section-head h2,
 .cv-education-grid h2,
 .cv-skills-grid h2 {
@@ -1474,7 +1449,6 @@ button {
   line-height: 1;
 }
 
-.cv-profile-grid h2 span,
 .cv-section-head h2 span,
 .cv-education-grid h2 span,
 .cv-skills-grid h2 span {
@@ -1483,13 +1457,6 @@ button {
   font-weight: 400;
   font-style: italic;
   letter-spacing: -0.035em;
-}
-
-.cv-profile-grid > div > p {
-  max-width: 780px;
-  margin: 25px 0 0;
-  font-size: 15px;
-  line-height: 1.8;
 }
 
 .cv-section-head {
@@ -1725,7 +1692,6 @@ button {
     gap: 5px 16px;
   }
 
-  .cv-profile-grid,
   .cv-education-grid,
   .cv-skills-grid,
   .cv-contact-inner {
@@ -1733,11 +1699,6 @@ button {
     gap: 25px;
   }
 
-  .cv-profile-grid .eyebrow {
-    margin-bottom: 0;
-  }
-
-  .cv-profile-grid h2,
   .cv-section-head h2,
   .cv-education-grid h2,
   .cv-skills-grid h2 {
