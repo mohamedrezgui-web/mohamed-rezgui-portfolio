@@ -146,7 +146,8 @@ button {
 
 .site-nav a:hover::after,
 .site-nav a:focus-visible::after,
-.site-nav a[aria-current="location"]::after {
+.site-nav a[aria-current="location"]::after,
+.site-nav a[aria-current="page"]::after {
   transform: scaleX(1);
 }
 
@@ -1691,5 +1692,112 @@ button {
 @media (min-width: 761px) and (max-width: 1100px) {
   .cv-contact h2 {
     font-size: clamp(48px, 7vw, 76px);
+  }
+}
+
+.passion-intro {
+  padding-top: clamp(62px, 8vw, 116px);
+}
+
+.passion-intro h1 {
+  max-width: 1000px;
+  margin: 0;
+  font-size: clamp(58px, 10vw, 132px);
+  font-weight: 700;
+  letter-spacing: -0.095em;
+  line-height: 0.9;
+}
+
+.passion-intro h1 span {
+  display: block;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+.passion-intro-copy {
+  max-width: 660px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: clamp(16px, 1.8vw, 19px);
+  line-height: 1.7;
+}
+
+.passion-list-section {
+  padding-top: clamp(55px, 7vw, 92px);
+}
+
+.passion-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 42px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--ink);
+}
+
+.passion-list li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  padding: 25px 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.passion-number {
+  padding-top: 5px;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 19px;
+  font-style: italic;
+}
+
+.passion-list h2 {
+  margin: 0;
+  font-size: clamp(21px, 2.4vw, 29px);
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+}
+
+.passion-list p {
+  max-width: 470px;
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.passion-next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: clamp(58px, 8vw, 100px);
+  padding-block: 25px;
+  border-top: 1px solid var(--ink);
+}
+
+.passion-next p {
+  max-width: 500px;
+  margin: 0;
+  font-size: 17px;
+}
+
+@media (max-width: 680px) {
+  .passion-intro h1 {
+    font-size: clamp(38px, 12vw, 65px);
+  }
+
+  .passion-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .passion-list li {
+    gap: 12px;
+    padding-block: 21px 25px;
   }
 }
