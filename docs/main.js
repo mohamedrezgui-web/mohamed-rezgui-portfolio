@@ -56,4 +56,39 @@
 
     for (const section of sections) sectionObserver.observe(section);
   }
+
+  const projectLightbox = document.querySelector("[data-project-lightbox]");
+  const lightboxImage = projectLightbox?.querySelector("[data-lightbox-image]");
+  const lightboxCaption = projectLightbox?.querySelector("[data-lightbox-caption]");
+  const lightboxClose = projectLightbox?.querySelector(".lightbox-close");
+
+  if (
+    projectLightbox instanceof HTMLDialogElement &&
+    lightboxImage instanceof HTMLImageElement &&
+    lightboxCaption &&
+    lightboxClose instanceof HTMLButtonElement
+  ) {
+    for (const link of document.querySelectorAll("a[data-lightbox]")) {
+      link.addEventListener("click", (event) => {
+        const image = link.querySelector("img");
+        if (!(image instanceof HTMLImageElement) || typeof projectLightbox.showModal !== "function") return;
+
+        event.preventDefault();
+        lightboxImage.src = link.href;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = image.alt;
+        projectLightbox.showModal();
+      });
+    }
+
+    lightboxClose.addEventListener("click", () => projectLightbox.close());
+    projectLightbox.addEventListener("click", (event) => {
+      if (event.target === projectLightbox) projectLightbox.close();
+    });
+    projectLightbox.addEventListener("close", () => {
+      lightboxImage.removeAttribute("src");
+      lightboxImage.alt = "";
+      lightboxCaption.textContent = "";
+    });
+  }
 })();

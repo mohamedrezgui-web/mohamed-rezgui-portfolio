@@ -157,7 +157,7 @@
         </div>
 
         <article class="project project-featured">
-          <div class="project-image featured-image"><img src="assets/africa.jpeg" alt="Poster The voice of Africa" width="900" height="1161" loading="lazy"></div>
+          <div class="project-image featured-image"><a class="project-image-link" href="assets/africa.jpeg" data-lightbox aria-label="Ingrandisci: poster The voice of Africa"><img src="assets/africa.jpeg" alt="Poster The voice of Africa" width="900" height="1161" loading="lazy"></a></div>
           <div class="project-copy">
             <p class="project-kicker">Progetto in evidenza</p>
             <img class="company-logo project-logo" src="assets/logo_vim.png" alt="Logo Vimarte" width="90" height="48" loading="lazy">
@@ -165,36 +165,36 @@
             <p class="project-meta">Vimarte · Concept grafico</p>
             <p>Concept per un’ipotetica mostra sull’arte e la cultura africana. Un ritratto stilizzato ad alto contrasto si combina con fasce cromatiche verticali e lettering nei colori panafricani (verde, giallo, rosso e nero). Il progetto unisce fotoritocco, tipografia e psicologia del colore ed è pensato per la stampa e i social.</p>
             <div class="project-gallery">
-              <img src="assets/totem.jpeg" alt="Poster The voice of Africa su totem urbano" width="900" height="558" loading="lazy">
-              <img src="assets/galleria.jpeg" alt="Mockup del poster The voice of Africa in galleria" width="900" height="507" loading="lazy">
+              <a class="project-image-link" href="assets/totem.jpeg" data-lightbox aria-label="Ingrandisci: poster The voice of Africa su totem urbano"><img src="assets/totem.jpeg" alt="Poster The voice of Africa su totem urbano" width="900" height="558" loading="lazy"></a>
+              <a class="project-image-link" href="assets/galleria.jpeg" data-lightbox aria-label="Ingrandisci: mockup del poster The voice of Africa in galleria"><img src="assets/galleria.jpeg" alt="Mockup del poster The voice of Africa in galleria" width="900" height="507" loading="lazy"></a>
             </div>
           </div>
         </article>
 
         <div class="project-grid">
           <article class="project">
-            <div class="project-image"><img src="assets/donna.jpeg" alt="Poster La donna nell’arte" width="838" height="1350" loading="lazy"></div>
+            <div class="project-image"><a class="project-image-link" href="assets/donna.jpeg" data-lightbox aria-label="Ingrandisci: poster La donna nell’arte"><img src="assets/donna.jpeg" alt="Poster La donna nell’arte" width="838" height="1350" loading="lazy"></a></div>
             <img class="company-logo project-logo" src="assets/logo_vim.png" alt="Logo Vimarte" width="90" height="48" loading="lazy">
             <h3>La donna nell’arte</h3>
             <p class="project-meta">Vimarte · Concept grafico</p>
             <p>Un volto in duotone, con toni freddi e caldi a confronto, racconta le diverse prospettive della donna nella storia dell’arte. Il carattere graziato conferisce eleganza e autorevolezza. Il progetto è pensato per una campagna di sensibilizzazione o per la copertina di una rassegna.</p>
           </article>
           <article class="project">
-            <div class="project-image"><img src="assets/arte.jpeg" alt="Poster L’arte non solo con gli occhi" width="900" height="1270" loading="lazy"></div>
+            <div class="project-image"><a class="project-image-link" href="assets/arte.jpeg" data-lightbox aria-label="Ingrandisci: poster L’arte non solo con gli occhi"><img src="assets/arte.jpeg" alt="Poster L’arte non solo con gli occhi" width="900" height="1270" loading="lazy"></a></div>
             <img class="company-logo project-logo" src="assets/logo_vim.png" alt="Logo Vimarte" width="90" height="48" loading="lazy">
             <h3>L’arte non solo con gli occhi</h3>
             <p class="project-meta">Vimarte · Payoff e identità</p>
             <p>Un busto classico, in una palette monocromatica, rinnova l’identità della galleria e parla anche a un pubblico giovane. Le forme morbide della scultura contrastano con un carattere geometrico e deciso. Il formato è pensato per l’affissione e i social.</p>
           </article>
           <article class="project">
-            <div class="project-image"><img src="assets/murale.jpeg" alt="Murale ispirato a Banksy negli uffici Open Staff" width="900" height="555" loading="lazy"></div>
+            <div class="project-image"><a class="project-image-link" href="assets/murale.jpeg" data-lightbox aria-label="Ingrandisci: murale negli uffici Open Staff"><img src="assets/murale.jpeg" alt="Murale ispirato a Banksy negli uffici Open Staff" width="900" height="555" loading="lazy"></a></div>
             <img class="company-logo project-logo" src="assets/logo_open.png" alt="Logo Open Staff" width="90" height="40" loading="lazy">
             <h3>Murale di ambient marketing</h3>
             <p class="project-meta">Open Staff · Stage curriculare</p>
             <p>Negli uffici di Open Staff ho realizzato un murale di ambient marketing ispirato alla “Bambina col palloncino” di Banksy: al posto del palloncino ho inserito il logo aziendale.</p>
           </article>
           <article class="project podcast-project">
-            <div class="project-image project-image-square"><img src="assets/podcast.jpeg" alt="Copertina del podcast Dimmi di +" width="480" height="480" loading="lazy"></div>
+            <div class="project-image project-image-square"><a class="project-image-link" href="assets/podcast.jpeg" data-lightbox aria-label="Ingrandisci: copertina del podcast Dimmi di +"><img src="assets/podcast.jpeg" alt="Copertina del podcast Dimmi di +" width="480" height="480" loading="lazy"></a></div>
             <h3>Puff Daddy: storia di una vita senza freni</h3>
             <p class="project-meta">Podcast “Dimmi di +” · Sound design e montaggio audio</p>
             <p>Montaggio e post-produzione dell’episodio pubblicato su Spreaker: ritmo della narrazione, pulizia delle tracce vocali e bilanciamento dei livelli per un ascolto immersivo e professionale.</p>
@@ -232,5 +232,16 @@
       <a class="back-to-top" href="#home">Torna su ↑</a>
     </div>
   </footer>
+
+  <dialog class="project-lightbox" data-project-lightbox aria-labelledby="project-lightbox-title">
+    <div class="lightbox-toolbar">
+      <p id="project-lightbox-title">Anteprima progetto</p>
+      <button class="lightbox-close" type="button" aria-label="Chiudi l’anteprima">Chiudi <span aria-hidden="true">×</span></button>
+    </div>
+    <figure>
+      <img data-lightbox-image alt="">
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+  </dialog>
 </body>
 </html>
